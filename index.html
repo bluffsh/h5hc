@@ -17,38 +17,25 @@
             margin: 0;
             color: #4a4a4a;
         }
-
         .glass-card {
             background: rgba(255, 255, 255, 0.4);
             backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 2rem;
             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
         }
-
         .link-card {
             transition: all 0.3s ease;
             border: 1px solid rgba(255, 255, 255, 0.5);
+            text-decoration: none;
         }
-
         .link-card:hover {
             transform: translateY(-3px);
             background: rgba(255, 255, 255, 0.8);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
         }
-
-        /* أنيميشن ناعم للخلفية */
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        
         .floating {
             animation: floating 3s ease-in-out infinite;
         }
-
         @keyframes floating {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-10px); }
@@ -56,65 +43,53 @@
     </style>
 </head>
 <body>
-
-    <div class="max-w-md w-full p-6">
-        <div class="glass-card p-8 text-center">
-            
-            <!-- صورة رمزية أو أيقونة -->
-            <div class="relative w-24 h-24 mx-auto mb-6 floating">
-                <div class="w-full h-full rounded-full bg-white shadow-inner flex items-center justify-center text-3xl">
-                    ✨
-                </div>
+    <div class="max-w-md w-full p-6 text-center">
+        <div class="glass-card p-8">
+            <div class="relative w-24 h-24 mx-auto mb-6 floating text-4xl flex items-center justify-center bg-white rounded-full shadow-sm">
+                ✨
             </div>
-
-            <!-- الاسم والتعريف -->
             <h1 class="text-2xl font-bold mb-2 tracking-wide">H5HC</h1>
             <p class="text-sm text-gray-600 mb-8 opacity-80">مرحباً بك في عالمي الهادئ</p>
-
-            <!-- الروابط -->
+            
             <div class="space-y-4">
-                
-                <!-- Snapchat -->
+                <!-- سناب شات -->
                 <a href="https://www.snapchat.com/add/h5hc" target="_blank" class="link-card flex items-center p-4 rounded-2xl bg-white/50">
                     <div class="bg-yellow-100 p-2 rounded-xl ml-4">
                         <svg class="w-6 h-6 text-yellow-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.8c-4.1 0-6.1 2.3-6.1 4.5 0 1.2.6 2.1 1.3 2.1.2 0 .4-.1.5-.2.2-.2.3-.6.4-1.1.1-.5.3-1 .8-1 .4 0 .7.4.7 1.1 0 1.1-.9 2.5-2.2 2.5-.2 0-.4 0-.6-.1-.1 1.2.6 2.3 2.1 2.8-.8.5-1.3 1.2-1.3 2.1 0 1.4 1.2 2.1 3.2 2.1.3 0 .6 0 .9-.1.3.8 1.1 1.4 2.1 1.4 1.1 0 1.9-.6 2.2-1.4.3.1.6.1.9.1 2 0 3.2-.7 3.2-2.1 0-.9-.5-1.6-1.3-2.1 1.5-.5 2.2-1.6 2.1-2.8-.2.1-.4.1-.6.1-1.3 0-2.2-1.4-2.2-2.5 0-.7.3-1.1.7-1.1.5 0 .7.5.8 1 .1.5.2.9.4 1.1.1.1.3.2.5.2.7 0 1.3-.9 1.3-2.1 0-2.2-2-4.5-6.1-4.5z"/></svg>
                     </div>
                     <div class="text-right flex-1">
-                        <span class="block font-bold">سناب شات</span>
+                        <span class="block font-bold text-gray-800">سناب شات</span>
                         <span class="text-xs text-gray-500">@h5hc</span>
                     </div>
                 </a>
 
-                <!-- TikTok -->
+                <!-- تيك توك -->
                 <a href="https://www.tiktok.com/@.h5hc" target="_blank" class="link-card flex items-center p-4 rounded-2xl bg-white/50">
                     <div class="bg-black/5 p-2 rounded-xl ml-4">
                         <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.06-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-1.01V14.5c0 1.94-.48 3.86-1.58 5.37-1.47 2.05-4.04 3.11-6.49 2.75-2.45-.36-4.55-2.24-5.28-4.59-.88-2.82.26-6.11 2.82-7.59 1.15-.67 2.47-.94 3.79-.83v4.03c-.8-.11-1.63.03-2.35.43-.87.49-1.41 1.43-1.41 2.44 0 1.54 1.25 2.8 2.8 2.8 1.51.02 2.83-1.19 2.83-2.7V0l.525.02z"/></svg>
                     </div>
                     <div class="text-right flex-1">
-                        <span class="block font-bold">تيك توك</span>
+                        <span class="block font-bold text-gray-800">تيك توك</span>
                         <span class="text-xs text-gray-500">@.h5hc</span>
                     </div>
                 </a>
 
-                <!-- Email -->
+                <!-- البريد الإلكتروني -->
                 <a href="mailto:bluffsh@gmail.com" class="link-card flex items-center p-4 rounded-2xl bg-white/50">
                     <div class="bg-blue-50 p-2 rounded-xl ml-4">
                         <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                     </div>
                     <div class="text-right flex-1">
-                        <span class="block font-bold">البريد الإلكتروني</span>
+                        <span class="block font-bold text-gray-800">البريد الإلكتروني</span>
                         <span class="text-xs text-gray-500">bluffsh@gmail.com</span>
                     </div>
                 </a>
-
             </div>
 
-            <!-- التذييل -->
             <footer class="mt-12 text-[10px] text-gray-400">
-                &copy; 2024 H5HC. جميع الحقوق محفوظة
+                &copy; 2026 H5HC. جميع الحقوق محفوظة
             </footer>
         </div>
     </div>
-
 </body>
 </html>
